@@ -12,18 +12,7 @@
         <title></title>
     </head>
 
-    <script>
-        function search() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status = 200) {
-                    document.getElementById("text").innerHTML = this.responseText;
-                }
-            };
-            xhttp.open("", "php/index.php?q=", true);
-            xhttp.send();
-        }
-    </script>
+    <script src="js/main.js"></script>
 
     <body>
         <div class="container">
@@ -42,7 +31,7 @@
 
                 <div class="col-md-8">
                     <div class="form-group">
-                        <form class="form-inline" name="search" action="php/index.php" method="GET">
+                        <form class="form-inline" name="search" onsubmit="search();" method="GET">
                         
                             Search by class: <input type="text" placeholder="Enter class" name="class"/>
                             
