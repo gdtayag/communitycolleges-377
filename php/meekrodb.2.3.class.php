@@ -19,10 +19,10 @@
 
 class DB {
   // initial connection
-  public static $dbName = 'umdschools';
-  public static $user = 'wteston';
+  public static $dbName = 'courses377';
+  public static $user = 'master';
   public static $password = '25791484';
-  public static $host = 'umdteston.crg6uhjkeqfz.us-west-2.rds.amazonaws.com';
+  public static $host = 'college-courses-377.clrzj8ueeqz7.us-east-2.rds.amazonaws.com';
   public static $port = 3306;
   public static $encoding = 'latin1';
   
