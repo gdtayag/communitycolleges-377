@@ -7,7 +7,7 @@
 
         //query
         $sql = "
-        SELECT Schedule.ID || ': ' || Schedule.Title as Name,Schedule.Term,Schedule.College,ID_UMD,End_Term_UMD
+        SELECT Schedule.ID || ': ' || Schedule.Title as Name,Schedule.Term,Schedule.College,ID_UMD,End_Term_UMD,Credit
         FROM Schedule JOIN Transfer ON (Schedule.ID = Transfer.ID_From AND Schedule.College = Transfer.College)
         ORDER BY ID";
 
@@ -19,7 +19,7 @@
 
         //print rows
         while($row = $result->fetchArray(SQLITE3_ASSOC)) {
-          echo "<tr><td>".$row['Name']."</td><td>".$row['College']."</td><td>".$row['Term']."</td><td>".$row['End_Term_UMD']."</td><td>".$row['ID_UMD']."</td></tr>";
+          echo "<tr><td>".$row['Name']."</td><td>".$row['College']."</td><td>".$row['Term']."</td><td>".$row['End_Term_UMD']."</td><td>".$row['ID_UMD']."</td><td>".$row['Credit']."</td></tr>";
 
         }
         echo "</table></div>";

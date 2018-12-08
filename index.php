@@ -68,7 +68,7 @@
                 <div class="col-md-12" id="text">
                   <div class="table-responsive">
                     <table class="table table-striped">
-                      <th>Course</th><th>College</th><th>Term</th><th>End Term</th><th>UMD Equivalent</th>
+                      <th>Course</th><th>College</th><th>Term</th><th>End Term</th><th>UMD Equivalent</th><th>Credit</th>
                         <?php include ('php/index.php');?>
                     </table>
                   </div>
