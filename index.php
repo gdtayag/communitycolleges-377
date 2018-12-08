@@ -31,7 +31,7 @@
 
                 <div class="col-md-8">
                     <div class="form-group">
-                        <form class="form-inline" name="search" onsubmit="search();" method="GET" action="php/index.php">
+                        <form class="form-inline" name="search" onsubmit="search();" method="POST" action="php/results.php">
 
                             Search by class: <input type="text" placeholder="Enter class" name="class"/>
 
@@ -48,9 +48,9 @@
                             <div class="col-md-4">
                                 Semester:
                                     <select name="semester">
-                                        <option value="Select" selected="selected">Choose Semester</option>
+                                        <option value='NULL' selected="selected">Any</option>
+                                        <option>Spring 2019</option>
                                         <option>Winter 2019</option>
-                                        <option>Summer 2019</option>
                                     </select>
                             </div>
 
@@ -68,8 +68,7 @@
                 <div class="col-md-12" id="text">
                   <div class="table-responsive">
                     <table class="table table-striped">
-                      <th>Course</th><th>College</th><th>Term</th><th>End Term</th><th>UMD Equivalent</th><th>Credit</th>
-                        <?php include ('php/index.php');?>
+
                     </table>
                   </div>
                 </div>
