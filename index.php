@@ -24,17 +24,17 @@
                 <div class="col-md-4">
                     <img id="logo" src="images/umd-ball.jpg" class="img-responsive">
                 </div>
-        
+
                 <div class="col-md-8">
                     <h1>Community College Course Finder</h1>
                 </div>
 
                 <div class="col-md-8">
                     <div class="form-group">
-                        <form class="form-inline" name="search" onsubmit="search();" method="GET">
-                        
+                        <form class="form-inline" name="search" onsubmit="search();" method="GET" action="php/index.php">
+
                             Search by class: <input type="text" placeholder="Enter class" name="class"/>
-                            
+
                             <div class="col-md-4">
                                 Subject:
                                     <select name="subject">
@@ -51,7 +51,6 @@
                                         <option value="Select" selected="selected">Choose Semester</option>
                                         <option>Winter 2019</option>
                                         <option>Summer 2019</option>
-                                        <option>Fall 2019</option>
                                     </select>
                             </div>
 
@@ -65,46 +64,14 @@
         <div class="row middle middle-buffer">
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>School</th>
-                                <th>Course</th>
-                                <th>Credits</th>
-                                <th>Equivalent</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>University of Maryland</td>
-                                <td>INST 377</td>
-                                <td>3</td>
-                                <td>N/A</td>
-                            </tr>
-                            <tr>
-                                <td>University of Maryland</td>
-                                <td>INST 346</td>
-                                <td>2</td>
-                                <td>N/A</td>
-                            </tr>
-                            <tr>
-                                <td>University of Maryland</td>
-                                <td>INST 352</td>
-                                <td>2</td>
-                                <td>N/A</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </div>
-                </div>
-            </div>
-
             <div class="row">
                 <div class="col-md-12" id="text">
-                    <?php include ('php/index.php');?>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <th>Course</th><th>College</th><th>Term</th><th>End Term</th><th>UMD Equivalent</th>
+                        <?php include ('php/index.php');?>
+                    </table>
+                  </div>
                 </div>
             </div>
         </div>
