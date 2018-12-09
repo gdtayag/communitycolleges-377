@@ -14,9 +14,11 @@
 
     <script src="js/main.js"></script>
 
+    <!-- Created using Bootstrap -->
+    
     <body>
         <div class="row top top-buffer">
-        </div>
+        </div>  
 
         <div class="container" style="border:3px solid #292929;">
 
@@ -56,7 +58,14 @@
                                         <option value="NULL" selected="selected">Any</option>
                                         <option>Anne Arundel</option>
                                         <option>Baltimore City</option>
-                                        <option>Baltimore County</option>
+                                        <option>Carroll</option>
+                                        <option>Frederick</option>
+                                        <option>Harford</option>
+                                        <option>Howard</option>
+                                        <option>Montgomery<option>
+                                        <option>NOVA<option>
+                                        <option>Southern MD<option>
+                                        <option>UDC<option>
                                     </select>
                             </div>
 
