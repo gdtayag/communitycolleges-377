@@ -6,19 +6,29 @@
         $connection = new SQLite3('schedule.sqlite');
 
         //Get search
-        if ($_POST['semester'] === 'NULL') {
-          $_POST['semester'] = null;
-                }
-
+        
+        // Searching by class
         if(isset($_POST['class'])){
         	$Search = htmlentities($_POST['class'], ENT_QUOTES, 'UTF-8');
           $Where = " WHERE Title LIKE '%$Search%' or ID_UMD LIKE '%$Search%'";
         }
-        if(isset($_POST['semester']) and isset($_POST['class'])){
+
+        // Filtering by semester if any value other than 'Any' ('NULL') is chosen
+        if(($_POST['semester'] != 'NULL') and isset($_POST['class'])){
           $Semester = htmlentities($_POST['semester'], ENT_QUOTES, 'UTF-8');
           $Where = " WHERE (Title LIKE '%$Search%' or ID_UMD LIKE '%$Search%') AND Schedule.Term = '$Semester'";
         }
 
+        // Filtering by school if any value other than 'Any' ('NULL') is chosen
+        if(($_POST['school'] != 'NULL') and isset($_POST['class'])){
+          $School = htmlentities($_POST['school'], ENT_QUOTES, 'UTF-8');
+          // If/else statement to deal with semester. Includes it if a semester is chosen, disregards it if not.
+            if ($_POST['semester'] == 'NULL') {
+              $Where = " WHERE (Title LIKE '%$Search%' or ID_UMD LIKE '%$Search%') AND Schedule.College = '$School'";
+            } elseif ($_POST['semester'] != 'NULL') {
+              $Where = " WHERE (Title LIKE '%$Search%' or ID_UMD LIKE '%$Search%') AND Schedule.Term = '$Semester' AND Schedule.College = '$School'";
+            }
+        }
 
         //query
         $sql = "
@@ -28,7 +38,6 @@
 
         //add WHERE
         $sql = $sql.$Where;
-        echo $sql;
 
         //query
         $result = $connection->query($sql);
