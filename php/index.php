@@ -19,7 +19,14 @@
 
         //print rows
         while($row = $result->fetchArray(SQLITE3_ASSOC)) {
-          echo "<tr><td>".$row['Name']."</td><td>".$row['College']."</td><td>".$row['Term']."</td><td>".$row['End_Term_UMD']."</td><td>".$row['ID_UMD']."</td><td>".$row['Credit']."</td></tr>";
+          echo "<tr>
+                    <td>".$row['Name']."</td>
+                    <td>".$row['College']."</td>
+                    <td>".$row['Term']."</td>
+                    <td>".$row['End_Term_UMD']."</td>
+                    <td>".$row['ID_UMD']."</td>
+                    <td>".$row['Credit']."</td>
+                </tr>";
 
         }
         echo "</table></div>";

@@ -10,19 +10,19 @@ This is the search filter that you will use to find the classes you want. It has
 * Semester
 * College
 
-#### Class or Class ID
+### Class or Class ID
 
 ![](/images/user_manual/Course.png)
 
 This is the Class or Class ID filter. It has no default value. The input type is text. If you know the Class ID of the class you want to take, like "INST 377" or "INST", then you can input that into the spot designated by the arrow and hit search. If not then you can input the type of class you want, like "Biology", and it will display all classes that are Biology related. This is the only required item as the other two have their default values set to "any".
 
-#### Semester
+### Semester
 
 ![](/images/user_manual/semester.png)
 
 This is the Semester filter. It's default value is "any" so it will give you results from all the semesters available. The input type is a drop down menu. All you have to do is select the desired semester from the drop down menu or any to search for all semesters.
 
-#### College
+### College
 
 ![](/images/user_manual/college.png)
 
