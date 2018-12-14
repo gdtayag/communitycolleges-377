@@ -1,4 +1,4 @@
-# Community College To UMD Course Finder
+# Community College Course Finder
 ## Developer Manual
 
 ### File Structure

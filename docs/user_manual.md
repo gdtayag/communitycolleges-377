@@ -1,4 +1,4 @@
-# Community College To UMD Course Finder
+# Community College Course Finder
 ## User Manual
 
 This program helps you find courses offered at local Maryland community colleges
