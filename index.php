@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="src/css/default.css">
         <title></title>
     </head>
 
@@ -24,7 +24,7 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <img id="logo" src="images/umd-ball.jpg" class="img-responsive">
+                    <img id="logo" src="src/images/umd-ball.jpg" class="img-responsive">
                 </div>
 
                 <div class="col-md-8">
@@ -33,7 +33,7 @@
 
                 <div class="col-md-8">
                     <div class="form-group">
-                        <form class="form-inline" name="search" onsubmit="search();" method="POST" action="php/results.php">
+                        <form class="form-inline" name="search" onsubmit="search();" method="POST" action="src/php/results.php">
 
                             <div class="col-md-10">
                                 <label for="classSearch">Search by Class or Class ID: <label>
