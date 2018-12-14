@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-# Community College To UMD Course Finder
-=======
+
 # [Community College To UMD Course Finder](http://communitycollegecourses377.us-east-2.elasticbeanstalk.com/)
->>>>>>> css/search-fix
+
 * William Teston - wjteston@gmail.com
 * Patrick Friday - pat.i.friday@gmail.com
 * Greg Tayag - gdtayag@gmail.com
