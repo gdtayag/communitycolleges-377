@@ -20,7 +20,7 @@
     </div>
 
     <div class="container" style="border:3px solid #292929;">
-        <form action="../index.php">
+        <form action="../../index.php">
             <input type="submit" value="Return" />
         </form>
 
