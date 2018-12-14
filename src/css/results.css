@@ -1,0 +1,21 @@
+body {
+    background-color: indianred;
+}
+
+.img-responsive {
+    float: right;
+    position: relative;
+    height: 200px;
+}
+
+.top-buffer {
+    margin-top: 30px;
+}
+
+.bottom-buffer {
+    margin-top: 30px;
+}
+
+.table-responsive table {
+    position: relative;
+}

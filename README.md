@@ -1,4 +1,6 @@
+<<<<<<< HEAD
 # Community College To UMD Course Finder
+>>>>>>> css/search-fix
 * William Teston - wjteston@gmail.com
 * Patrick Friday - pat.i.friday@gmail.com
 * Greg Tayag - gdtayag@gmail.com

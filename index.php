@@ -14,8 +14,13 @@
 
     <script src="js/main.js"></script>
 
+    <!-- Created using Bootstrap -->
+    
     <body>
-        <div class="container">
+        <div class="row top top-buffer">
+        </div>  
+
+        <div class="container" style="border:3px solid #292929;">
 
             <div class="row top top-buffer">
             </div>
@@ -33,46 +38,48 @@
                     <div class="form-group">
                         <form class="form-inline" name="search" onsubmit="search();" method="POST" action="php/results.php">
 
-                            Search by class: <input type="text" placeholder="Enter class" name="class"/>
-
-                            <div class="col-md-4">
-                                Subject:
-                                    <select name="subject">
-                                        <option value="Select" selected="selected">Choose Subject</option>
-                                        <option>Math</option>
-                                        <option>Biology</option>
-                                        <option>Business</option>
-                                    </select>
+                            <div class="col-md-10">
+                                <label for="classSearch">Search by Class or Class ID: <label>
+                                <input type="text" placeholder="Enter Class or Class ID" id="classSearch" name="class"/>
                             </div>
 
-                            <div class="col-md-4">
-                                Semester:
-                                    <select name="semester">
+                            <div class="col-md-10">
+                                <label for="semesterSelect">Choose a Semester: <label>
+                                    <select id="semesterSelect" name="semester">
                                         <option value='NULL' selected="selected">Any</option>
                                         <option>Spring 2019</option>
                                         <option>Winter 2019</option>
                                     </select>
                             </div>
 
+                            <div class="col-md-10">
+                                <label for="schoolSelect">Choose a College: <label>
+                                    <select id="schoolSelect" name="school">
+                                        <option value="NULL" selected="selected">Any</option>
+                                        <option>Anne Arundel</option>
+                                        <option>Baltimore City</option>
+                                        <option>Carroll</option>
+                                        <option>Frederick</option>
+                                        <option>Harford</option>
+                                        <option>Howard</option>
+                                        <option>Montgomery<option>
+                                        <option>NOVA<option>
+                                        <option>Southern MD<option>
+                                        <option>UDC<option>
+                                    </select>
+                            </div>
+
                             <div class="col-md-12">
-                                <input type="submit"/>
+                                <button type="submit" class="btn btn-primary">Search</button>
                             </div>
                         </form>
                     </div>
                 </div>
+            </div>
 
-        <div class="row middle middle-buffer">
+        <div class="row bottom bottom-buffer">
         </div>
 
-            <div class="row">
-                <div class="col-md-12" id="text">
-                  <div class="table-responsive">
-                    <table class="table table-striped">
-
-                    </table>
-                  </div>
-                </div>
-            </div>
         </div>
     </body>
 </html>

@@ -9,12 +9,11 @@ body {
 }
 
 .top-buffer {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.middle-buffer {
-    margin-top: 20px;
-    color: black;
+.bottom-buffer {
+    margin-top: 30px;
 }
 
 .table-responsive table {
