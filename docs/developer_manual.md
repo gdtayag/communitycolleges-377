@@ -5,7 +5,7 @@
 
 ![](/images/developer_manual/file_structure.png)
 
-This is the file structure for the project as it is now. The "docs" folder contains the user and developer manuals. The "images" folder contains all of the images used are every file. The HTML and CSS for the landing page is contained in the "index.php" file and the "css" folder. The "js" and "php" folders handle the search function and produce the results page.
+This is the file structure for the project as it is now. The "docs" folder contains the user and developer manuals. The main code for the app is located within the "src" folder, which contains the "images", "php", and "css" folder. The "images" folder contains all of the images used are every file. The HTML and CSS for the landing page is contained in the "index.php" file and the "css" folder. The "php" folder handles the search function and produces the results page.
 
 ### Manuals
 
